@@ -16,7 +16,7 @@ export default function TwitterThreadGenerator() {
     setError(""); // Reset previous errors
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/generate-thread`, {
+      const response = await fetch("https://ttg-backend-4.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
